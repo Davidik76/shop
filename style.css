@@ -3,14 +3,161 @@ body {
 	padding: 0;
 	font-size: 18px;
 	color: var(--tg-theme-text-color);
-	background: var(--tg-theme-bg-color);
+	background: #ddf2f0;
 }
 
 .container {
 	max-width: 390px;
+	margin: 0;
+	padding: 0;
+
 }
 
+text {
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+header {
+	max-width: 390px;
+	height: 40px;
+	padding: 10px;
+	position: fixed;
+	width: 95%;
+	margin-top: 0;
+	background-color: #fff;
+}
+
+.logo {
+	display: inline-block;
+}
+
+#logo {
+	width: 40px;
+	height: auto;
+	border-radius: 10px;
+}
+
+.search {
+	height: 39px;
+	display: inline-block;
+	width: 70%;
+	border: solid 2px #9b9b9b;
+	margin-right: 5px;
+	margin-left: 5px;
+	border-radius: 15px;
+}
+
+.searchInput {
+	width: 83%;
+	float: right;
+	margin-top: 2px;
+	margin-right: 0px;
+	height: 33px;
+	border: none;
+	border-radius: 15px;
+}
+
+input {
+	outline:none;
+}
+
+.searchInput::after {
+	border: none;
+}
+
+.searchSvg {
+	margin-left: 10px;
+	margin-top: 10px;
+	margin-bottom: 9px;
+}
+
+.filter {
+	display: inline-block;
+}
+
+.pageName {
+	padding-top: 70px;
+	margin-left: 10px;
+	margin-bottom: 20px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+.sections {
+	width: 100%;
+	overflow: scroll;
+	display: grid;
+	font-size: 10px;
+	width: 95%;
+	margin: 5px;
+	grid-template-columns: 100px 100px 100px 100px 100px 100px;
+}
+
+.sections::-webkit-scrollbar {
+  width: 10px;
+}
+
+.sections::-moz-scrollbar {
+  width: 0px;
+  height: 0px;
+}
+
+.bread {
+	width: 68px;
+	height: 65px;
+	border: solid 1px black;
+	margin: 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+.breadImg {
+	width: 68px;
+	height: 65px;
+	margin: 0;
+	border-radius: 10px;
+}
+
+.drinks {
+	width: 68px;
+	height: 65px;
+	border: solid 1px black;
+	margin: 10px;
+	border-radius: 10px;
+	border: none;
+}
+
+.drinksImg {
+	width: 68px;
+	height: 65px;
+	margin: 0;
+	border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .inner {
+	margin-top: 10px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: 200px 200px 200px;
@@ -22,6 +169,7 @@ body {
 
 .item {
 	text-align: center;
+	margin: 10px;
 }
 
 .btn {
@@ -46,7 +194,16 @@ body {
 }
 
 
-
+footer {
+	width: 100%;
+	text-align: center;
+	height: 25px;
+	margin: 10px;
+	margin-top: 5px;
+	font-family: "Poppins", sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
 
 
 
