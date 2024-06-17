@@ -102,7 +102,7 @@ input {
 
 .sections {
 	padding-top: 80px;
-	width: 100%;
+	width: 97%;
 	overflow: scroll;
 	display: grid;
 	font-size: 10px;
@@ -222,7 +222,7 @@ text, p{
 
 
 footer {
-	width: 105%;
+	width: 100%;
 	text-align: center;
 	height: 49px;
 	margin-top: 5px;
