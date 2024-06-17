@@ -2,8 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-size: 18px;
-	color: var(--tg-theme-text-color);
-	background: #ddf2f0;
+	background: #d5d5d5;
 }
 
 .container {
@@ -27,12 +26,12 @@ text {
 
 header {
 	max-width: 390px;
-	height: 40px;
+	height: 45px;
 	padding: 10px;
+	margin-top: -5px;
 	position: fixed;
 	width: 95%;
-	margin-top: 0;
-	background-color: #fff;
+	background-color: #ffffffbd;
 }
 
 .logo {
@@ -41,28 +40,32 @@ header {
 
 #logo {
 	width: 40px;
-	height: auto;
-	border-radius: 10px;
+ 	height: auto;
+ 	border-radius: 10px;
+ 	margin-top: 3px;
+ 	padding-bottom: 1px;
 }
 
 .search {
-	height: 39px;
-	display: inline-block;
-	width: 70%;
-	border: solid 2px #9b9b9b;
-	margin-right: 5px;
-	margin-left: 5px;
-	border-radius: 15px;
+	height: 36px;
+  	display: inline-block;
+  	width: 73%;
+  	border: solid 2px #9b9b9b;
+  	margin-right: 5px;
+  	margin-left: 5px;
+  	border-radius: 15px;
 }
 
 .searchInput {
-	width: 83%;
-	float: right;
-	margin-top: 2px;
-	margin-right: 0px;
-	height: 33px;
+	width: 80%;
+  	float: right;
+  	margin-top: 1px;
+  	margin-right: 13px;
+  	height: 32px;
 	border: none;
 	border-radius: 15px;
+	font-size: 18px;
+	background-color: #fff0;
 }
 
 input {
@@ -75,31 +78,36 @@ input {
 
 .searchSvg {
 	margin-left: 10px;
-	margin-top: 10px;
-	margin-bottom: 9px;
+	margin-top: 9px;
+	margin-bottom: 11px;
 }
 
 .filter {
 	display: inline-block;
 }
 
+.filterSvg {
+	padding-bottom: 7px;
+}
+
 .pageName {
-	padding-top: 70px;
-	margin-left: 10px;
-	margin-bottom: 20px;
+	margin-top: 10px;
+ 	margin-left: 28px;
+  	margin-bottom: 10px;
 	font-family: "Poppins", sans-serif;
-	font-weight: 300;
+	font-weight: 500;
 	font-style: normal;
+	color: #1e1e1e;
 }
 
 .sections {
+	padding-top: 80px;
 	width: 100%;
 	overflow: scroll;
 	display: grid;
 	font-size: 10px;
-	width: 95%;
 	margin: 5px;
-	grid-template-columns: 100px 100px 100px 100px 100px 100px;
+	grid-template-columns: 90px 90px 90px 90px 90px 90px;
 }
 
 .sections::-webkit-scrollbar {
@@ -143,7 +151,11 @@ input {
 	border-radius: 10px;
 }
 
-
+text, p{
+	font-family: "Poppins", sans-serif;
+	font-weight: 500;
+	font-style: normal;
+}
 
 
 
@@ -160,33 +172,47 @@ input {
 	margin-top: 10px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 200px 200px 200px;
+	grid-template-rows: 230px 230px 230px;
+	width: 104%;
+  	margin-left: 21px;
 }
 
 .img {
-	width: 150px;
+	width: 93%;
+  	border-radius: 15px;
+  	margin-top: 4px;
 }
 
 .item {
 	text-align: center;
-	margin: 10px;
+  	margin: 10px;
+  	height: 212px;
+  	padding-top: 2px;
+  	background-color: #fff;
+  	width: 140px;
+  	border-radius: 20px;
+}
+
+.itemName {
+	font-size: 14px;
+	margin-top: 0px;
+	margin-bottom: 5px;
 }
 
 .btn {
 	display: inline-block;
-	padding: 10px 20px;
-	border: none;
-	background: rgb(248, 168, 24);
-	border-radius: 10px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 700;
-
-	transition: background .2s linear;
+  	padding: 12px 37px;
+  	border: none;
+  	background: rgb(24, 59, 248);
+  	border-radius: 17px;
+  	color: #fff;
+  	text-transform: uppercase;
+  	font-weight: 700;
+  	transition: background .2s linear;
 }
 
-.btn:hover {
-	background: lightgreen;
+.btn:active {
+	background: rgb(59, 86, 232);
 }
 
 .usercard {
@@ -195,14 +221,15 @@ input {
 
 
 footer {
-	width: 100%;
+	width: 105%;
 	text-align: center;
-	height: 25px;
-	margin: 10px;
+	height: 49px;
 	margin-top: 5px;
 	font-family: "Poppins", sans-serif;
 	font-weight: 300;
 	font-style: normal;
+	background-color: white;
+	padding-top: 25px;
 }
 
 
