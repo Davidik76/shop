@@ -33,7 +33,7 @@ const search = document.querySelector('.searchInput');
 	};
 
 
-document.querySelector('.all').onclick = showAllItem;
+document.querySelector('.logo').onclick = showAllItem;
 document.querySelector('.telegram').onclick = showOnlyTelegram;
 document.querySelector('.Instagram').onclick = showOnlyInsta;
 // document.querySelector('.telegram').onclick = showOnlyBananas;
