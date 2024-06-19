@@ -120,9 +120,10 @@ input {
 }
 
 .sections {
+	overflow-x: scroll;
 	padding-top: 80px;
 	width: 97%;
-	overflow: scroll;
+	overflow-y: hidden;
 	display: grid;
 	font-size: 10px;
 	margin: 5px;
