@@ -32,21 +32,42 @@ const search = document.querySelector('.searchInput');
     	})
 	};
 
-const filterItem = document.querySelectorAll('.item');
-document.querySelector('.sections').addEventListener('click', (event)=> {
-	if (event.target.class !== '.telegram') return false;
 
-	let filterClass = event.target.dataset['f'];
+document.querySelector('.all').onclick = showAllItem;
+document.querySelector('.telegram').onclick = showOnlyTelegram;
+document.querySelector('.Instagram').onclick = showOnlyInsta;
+// document.querySelector('.telegram').onclick = showOnlyBananas;
+// document.querySelector('.telegram').onclick = showOnlyBananas;
 
-	filterItem.forEach( elem => {
-		if (!elem.classList.contains(filterClass)) {
-			elem.classList.add('hide');
-		}
-	})
-});
+// Функция для показа только дивов с классом "banana"
+function showOnlyTelegram() {
+  // Скрываем все дивы
+  document.querySelectorAll('.item').forEach(function(div) {
+    div.style.display = 'none';
+  });
+  // Показываем только дивы с классом "banana"
+  document.querySelectorAll('.Ftg').forEach(function(div) {
+    div.style.display = 'block';
+  });
+}
 
+function showOnlyInsta() {
+  // Скрываем все дивы
+  document.querySelectorAll('.item').forEach(function(div) {
+    div.style.display = 'none';
+  });
+  // Показываем только дивы с классом "banana"
+  document.querySelectorAll('.Finsta').forEach(function(div) {
+    div.style.display = 'block';
+  });
+}
 
-
+// Функция для показа всех дивов
+function showAllItem() {
+  document.querySelectorAll('.item').forEach(function(div) {
+    div.style.display = 'block';
+  });
+}
 
 let item = "";
 

@@ -223,6 +223,9 @@ strike {
 	font-size: 14px;
 	margin-top: 0px;
 	margin-bottom: 5px;
+	max-width: 130px;
+  width: auto;
+  margin: auto;
 }
 
 .price {
