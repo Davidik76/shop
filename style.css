@@ -1,3 +1,6 @@
+@import url("buy.css");
+
+
 body {
 	margin: 0;
 	padding: 0;
@@ -44,6 +47,7 @@ header {
  	border-radius: 10px;
  	margin-top: 3px;
  	padding-bottom: 1px;
+ 	margin-left: 10px;
 }
 
 .search {
@@ -56,16 +60,25 @@ header {
   	border-radius: 15px;
 }
 
+.closeSvg {
+	float: right;
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+  margin-right: 3px;
+  display: none;
+}
+
+
 .searchInput {
-	width: 80%;
-  	float: right;
-  	margin-top: 1px;
-  	margin-right: 13px;
-  	height: 32px;
+	width: 75%;
+ 	height: 32px;
 	border: none;
 	border-radius: 15px;
 	font-size: 18px;
 	background-color: #fff0;
+	position: relative;
+  top: -15px;
 }
 
 input {
@@ -74,6 +87,12 @@ input {
 
 .searchInput::after {
 	border: none;
+}
+
+
+
+.hide {
+	display: none;
 }
 
 .searchSvg {
@@ -119,7 +138,7 @@ input {
   height: 0px;
 }
 
-.bread {
+.telegram {
 	width: 68px;
 	height: 65px;
 	border: solid 1px black;
@@ -128,14 +147,16 @@ input {
 	border: none;
 }
 
-.breadImg {
+.telegramImg {
 	width: 68px;
-	height: 65px;
-	margin: 0;
-	border-radius: 10px;
+  height: 65px;
+  margin: 0;
+  border-radius: 66px;
+  background-color: white;
+  padding: 5px;
 }
 
-.drinks {
+.Instagram {
 	width: 68px;
 	height: 65px;
 	border: solid 1px black;
@@ -144,11 +165,13 @@ input {
 	border: none;
 }
 
-.drinksImg {
+.InstagramImg {
 	width: 68px;
-	height: 65px;
-	margin: 0;
-	border-radius: 10px;
+  height: 65px;
+  margin: 0;
+  border-radius: 66px;
+  background-color: white;
+  padding: 5px;
 }
 
 text, p{
@@ -165,33 +188,35 @@ text, p{
 
 
 
-
+strike {
+	color: red;
+}
 
 
 .inner {
 	margin-top: 10px;
   display: grid;
   grid-template-columns: 1fr auto;
-  grid-template-rows: 230px 230px 230px;
+  grid-template-rows: 290px 290px 290px;
   width: 92%;
   margin-left: auto;
   margin-right: auto;
 }
 
 .img {
-	width: 93%;
-  	border-radius: 15px;
-  	margin-top: 4px;
+	width: 85%;
+  border-radius: 15px;
+  margin-top: 8px;
 }
 
 .item {
 	text-align: center;
-  	margin: 10px;
-  	height: 212px;
-  	padding-top: 2px;
-  	background-color: #fff;
-  	width: 140px;
-  	border-radius: 20px;
+  margin: 10px;
+  height: 265px;
+  padding-top: 2px;
+  background-color: #fff;
+  width: 152px;
+  border-radius: 20px;
 }
 
 .itemName {
@@ -199,6 +224,13 @@ text, p{
 	margin-top: 0px;
 	margin-bottom: 5px;
 }
+
+.price {
+	font-weight: 300;
+	font-size: 17px;
+	margin-bottom: 5px;
+}
+
 
 .btn {
 	display: inline-block;
