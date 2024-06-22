@@ -36,8 +36,6 @@ const search = document.querySelector('.searchInput');
 document.querySelector('.logo').onclick = showAllItem;
 document.querySelector('.telegram').onclick = showOnlyTelegram;
 document.querySelector('.Instagram').onclick = showOnlyInsta;
-// document.querySelector('.telegram').onclick = showOnlyBananas;
-// document.querySelector('.telegram').onclick = showOnlyBananas;
 
 
 function showOnlyTelegram() {
@@ -97,14 +95,9 @@ btn2.addEventListener("click", function(){
 });
 
 btn3.addEventListener("click", function(){
-	if (tg.MainButton.isVisible) {
-		tg.MainButton.hide();
-	}
-	else {
 		tg.MainButton.setText("купить товар 3");
 		item = "3";
 		tg.MainButton.show();
-	}
 });
 
 btn4.addEventListener("click", function(){
@@ -146,14 +139,14 @@ Telegram.WebApp.onEvent("mainButtonClicked", function(){
 });
 
 
-// let usercard = document.getElementById("usercard");
+let usercard = document.getElementById("usercard");
 
-// let p = document.createElement("p");
+let p = document.createElement("p");
 
-// p.innerText = `${tg.initDataUnsafe.user.first_name}
-// ${tg.initDataUnsafe.user.last_name}`;
+p.innerText = `${tg.initDataUnsafe.user.first_name}
+${tg.initDataUnsafe.user.last_name}`;
 
-// usercard.appendChild(p);
+usercard.appendChild(p);
 
 
 
