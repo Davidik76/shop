@@ -119,16 +119,16 @@ btn4.addEventListener("click", function(){
 // 	}
 // });
 
-// btn5.addEventListener("click", function(){
-// 	if (tg.MainButton.isVisible) {
-// 		tg.MainButton.hide();
-// 	}
-// 	else {
-// 		tg.MainButton.setText("Перейти в корзину");
-// 		item = "5";
-// 		tg.MainButton.show();
-// 	}
-// });
+btn5.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Перейти в корзину");
+		item = "5";
+		tg.MainButton.show();
+	}
+});
 
 // btn6.addEventListener("click", function(){
 // 	if (tg.MainButton.isVisible) {
