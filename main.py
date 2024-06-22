@@ -9,6 +9,7 @@ from aiogram.enums import ParseMode
 from aiogram.filters import CommandStart
 from aiogram.types import Message
 from aiogram import types
+from aiogram.utils.keyboard import InlineKeyboardBuilder
 
 # Bot token can be obtained via https://t.me/BotFather
 TOKEN = '6296307365:AAGFQEFIKoUzV8-LZ9t1LbT8dBaeJxFjOLc'
@@ -20,10 +21,11 @@ dp = Dispatcher()
 
 @dp.message(CommandStart())
 async def command_start_handler(message: Message) -> None:
-    kb = [
-        [types.KeyboardButton(text="С пюрешкой")],
-        [types.KeyboardButton(text="Без пюрешки")]
-    ]
+    builder = InlineKeyboardBuilder()
+    builder.add(
+        types.InlineKeyboardButton(text="Поддержка"),
+        types.InlineKeyboardButton(text="Нажми меня")
+    )
     await message.answer(f"Привет лошара")
 
 
