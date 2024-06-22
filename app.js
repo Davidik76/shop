@@ -102,7 +102,7 @@ btn3.addEventListener("click", function(){
 
 
 btn4.addEventListener("click", function(){
-	if (tg.MainButton.Text = "Товар3") {
+	if (tg.MainButton.Text == "Товар3") {
 		tg.MainButton.setText = "Товар4";
 	}
 });
