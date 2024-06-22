@@ -101,20 +101,20 @@ btn3.addEventListener("click", function(){
 });
 
 
-btn4.addEventListener("click", function(){
-	if (tg.MainButton.Text = "Товар4") {
-		tg.MainButton.hide();	
-	}
-});
-
 // btn4.addEventListener("click", function(){
-// 	if ((tg.MainButton.isVisible) & (tg.MainButton.Text != "Товар4")) {
-// 		tg.MainButton.setText = "Товар4";
-// 	}
-// 	else if (tg.MainButton.Text = "Товар4") {
+// 	if (tg.MainButton.Text = "Товар4") {
 // 		tg.MainButton.hide();	
 // 	}
 // });
+
+btn4.addEventListener("click", function(){
+	if ((tg.MainButton.isVisible) & (tg.MainButton.Text != "Товар4")) {
+		tg.MainButton.setText = "Товар4";
+	}
+	else if (tg.MainButton.Text = "Товар4") {
+		tg.MainButton.hide();	
+	}
+});
 
 // btn5.addEventListener("click", function(){
 // 	if (tg.MainButton.isVisible) {
