@@ -39,30 +39,29 @@ document.querySelector('.Instagram').onclick = showOnlyInsta;
 // document.querySelector('.telegram').onclick = showOnlyBananas;
 // document.querySelector('.telegram').onclick = showOnlyBananas;
 
-// Функция для показа только дивов с классом "banana"
+
 function showOnlyTelegram() {
-  // Скрываем все дивы
+  
   document.querySelectorAll('.item').forEach(function(div) {
     div.style.display = 'none';
   });
-  // Показываем только дивы с классом "banana"
+
   document.querySelectorAll('.Ftg').forEach(function(div) {
     div.style.display = 'block';
   });
 }
 
 function showOnlyInsta() {
-  // Скрываем все дивы
+
   document.querySelectorAll('.item').forEach(function(div) {
     div.style.display = 'none';
   });
-  // Показываем только дивы с классом "banana"
+
   document.querySelectorAll('.Finsta').forEach(function(div) {
     div.style.display = 'block';
   });
 }
 
-// Функция для показа всех дивов
 function showAllItem() {
   document.querySelectorAll('.item').forEach(function(div) {
     div.style.display = 'block';
@@ -75,8 +74,8 @@ let btn1 = document.getElementById("btn1");
 let btn2 = document.getElementById("btn2");
 let btn3 = document.getElementById("btn3");
 let btn4 = document.getElementById("btn4");
-let btn5 = document.getElementById("btn5");
-let btn6 = document.getElementById("btn6");
+// let btn5 = document.getElementById("btn5");
+// let btn6 = document.getElementById("btn6");
 
 let BuyDiv = document.querySelector('.buy_div');
 let ItemName = document.querySelector('.ItemName');
@@ -97,27 +96,27 @@ btn2.addEventListener("click", function(){
 	item = "2";
 });
 
-// btn3.addEventListener("click", function(){
-// 	if (tg.MainButton.isVisible) {
-// 		tg.MainButton.hide();
-// 	}
-// 	else {
-// 		tg.MainButton.setText("Перейти в корзину");
-// 		item = "3";
-// 		tg.MainButton.show();
-// 	}
-// });
+btn3.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("купить товар 3");
+		item = "3";
+		tg.MainButton.show();
+	}
+});
 
-// btn4.addEventListener("click", function(){
-// 	if (tg.MainButton.isVisible) {
-// 		tg.MainButton.hide();
-// 	}
-// 	else {
-// 		tg.MainButton.setText("Перейти в корзину");
-// 		item = "4";
-// 		tg.MainButton.show();
-// 	}
-// });
+btn4.addEventListener("click", function(){
+	if (tg.MainButton.isVisible) {
+		tg.MainButton.hide();
+	}
+	else {
+		tg.MainButton.setText("Перейти в корзину");
+		item = "4";
+		tg.MainButton.show();
+	}
+});
 
 // btn5.addEventListener("click", function(){
 // 	if (tg.MainButton.isVisible) {
@@ -142,9 +141,9 @@ btn2.addEventListener("click", function(){
 // });
 
 
-// Telegram.WebApp.onEvent("mainButtonClicked", function(){
-// 	tg.sendData(item);
-// });
+Telegram.WebApp.onEvent("mainButtonClicked", function(){
+	tg.sendData(item);
+});
 
 
 // let usercard = document.getElementById("usercard");
