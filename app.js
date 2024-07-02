@@ -95,7 +95,7 @@ btn3.addEventListener("click", function(){
 	tg.MainButton.setText("Товар3");
 	tg.MainButton.show();
 	let data = {
-        price: 36,
+        price: 200,
         item: "Название товара",
     	};
 	tg.sendData(JSON.stringify(data));
