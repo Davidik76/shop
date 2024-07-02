@@ -83,22 +83,12 @@ btn1.addEventListener("click", function(){
 	BuyDiv.style.display = "block";
 	ItemName.textContent = "Подписчики телеграм";
 	ItemPrice.textContent = "36 рублей за 1000 штук";
-	price: 36,
-        item: "Название товара",
-    	};
-	tg.sendData(JSON.stringify(data));
-    	tg.close();
 });
 
 btn2.addEventListener("click", function(){
 	BuyDiv.style.display = "block";
 	ItemName.textContent = "Просмотры Instagram";
 	ItemPrice.textContent = "27 рублей за 1000 штук";
-	 price: 27,
-        item: "Название товара",
-    	};
-	tg.sendData(JSON.stringify(data));
-    	tg.close();
 });
 
 btn3.addEventListener("click", function(){
