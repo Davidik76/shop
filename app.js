@@ -79,12 +79,11 @@ let BuyDiv = document.querySelector('.buy_div');
 let ItemName = document.querySelector('.ItemName');
 let ItemPrice = document.querySelector('.ItemPrice');
 
-
 btn1.addEventListener("click", function(){
 	BuyDiv.style.display = "block";
 	ItemName.textContent = "Подписчики телеграм";
 	ItemPrice.textContent = "36 рублей за 1000 штук";
-	item = "1";
+	
 });
 
 btn2.addEventListener("click", function(){
@@ -95,9 +94,14 @@ btn2.addEventListener("click", function(){
 });
 
 btn3.addEventListener("click", function(){
-		tg.MainButton.setText("Товар3");
-		item = "3";
-		tg.MainButton.show();
+	tg.MainButton.setText("Товар3");
+	tg.MainButton.show();
+	let data = {
+        price: 200,
+        item: "Название товара",
+    	};
+	tg.sendData(JSON.stringify(data));
+    	tg.close();
 });
 
 
